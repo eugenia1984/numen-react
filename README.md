@@ -10,6 +10,8 @@ Links:
 
 [Acá se puede ver el tablero de Trello con el que trabajamos](https://trello.com/b/3g5jnbhr/proyecto-final-reactt)
 
+
+[Aca se puede ver la consigna en PDF]()
 ---
 
 ## Tecnologías utilizadas:
@@ -20,7 +22,9 @@ Links:
 
 - JavaScript
 
-- React ( JSX ) 
+- Tailwind
+
+- React ( JSX, axios ) 
 
 ---
 
