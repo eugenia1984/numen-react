@@ -76,4 +76,6 @@ entregado en Figma, los requerimientos técnicos y la funcionalidad deseada.
 
 [Ekelhtml](https://github.com/Ekelhtml)
 
+[Martin Larossa](https://github.com/Martin8398)
+
 [Julieta Marcer](https://github.com/jmercer)
