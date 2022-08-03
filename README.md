@@ -21,8 +21,7 @@ entregado en Figma, los requerimientos técnicos y la funcionalidad deseada.
 
 1. En primer lugar, es necesario entrar al link donde se encuentra el diseño:
 
-https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-
-(Community)?node-id=0%3A1
+[https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community)?node-id=0%3A1](https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community)?node-id=0%3A1)
 
 2. El diseño propuesto es flexible y está sujeto a cambios y mejoras. No obstante, hay ciertos requerimientos que deben ser respetados:
 
