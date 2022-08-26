@@ -102,6 +102,6 @@ Luego de bajarte el repositorio corre ```nmp install``` y luego ```npm start``` 
 
 - [JSON Server](https://www.npmjs.com/package/json-server) ```npm install  json-server```
 
--[Axios](https://axios-http.com/docs/intro) ```npm install axios```
+- [Axios](https://axios-http.com/docs/intro) ```npm install axios```
 
--[Material UI](https://mui.com/)  ```npm install @mui/material @emotion/react @emotion/styled  ```
+- [Material UI](https://mui.com/)  ```npm install @mui/material @emotion/react @emotion/styled  ```
