@@ -1,9 +1,10 @@
-/*import `/AboutUs.css`;*/
+import './AboutUs.css';
 
 const AboutUs = (props) => {
   
   return (
-    <div className="AboutUsCss" style={{color: blue,
+    <div className="aboutUsCss" style={
+      {
       width: 200,
       display: `block`,
       textAlign: `center` ,
