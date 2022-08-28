@@ -4,6 +4,8 @@ import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import { Products } from "./pages/Products";
 import { Warning } from "./components/warning/Warning";
+import { Contacto } from "./pages/Contacto";
+
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
     <Warning/>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/products" element={<Products />} />
+        <Route exact path="/contacto" element={<Contacto />} />
+
       </Routes>
       <Footer />
     </>

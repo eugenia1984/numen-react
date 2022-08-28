@@ -1,14 +1,14 @@
 import React from 'react';
-import { Logo } from "./Logo";
-import { Navbar } from "./Navbar";
-import { Icons } from "./Icons";
+import Logo  from "./Logo";
+import Icons from "./Icons";
+import ResponsiveAppBar from './ResponsiveAppBar';
 
 const Header = () => {
   return (
     <>
-      <Logo />
-      <Navbar />
-      <Icons />
+      <Logo/>
+      <ResponsiveAppBar/>
+      <Icons/>
     </>
   )
 }
