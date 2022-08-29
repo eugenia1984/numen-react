@@ -1,4 +1,13 @@
-.aboutUsCss {
+.aboutUsDiv {
     color: #0000ff;
+    width: 200px;
+    display:  block ;
+    text-align: center ;
+    border-radius: 8px;
+    border:2px solid rgba(30, 30, 30);
 }
 
+.aboutUsImg {
+    height: 200px; 
+    max-width: 100%;
+}

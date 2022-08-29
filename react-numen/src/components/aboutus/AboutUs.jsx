@@ -3,19 +3,13 @@ import './AboutUs.css';
 const AboutUs = (props) => {
   
   return (
-    <div className="aboutUsCss" style={
-      {
-      width: 200,
-      display: `block`,
-      textAlign: `center` ,
-      borderRadius: 8,
-      border:`2px solid rgba(30, 30, 30)`,}}>
+    <div className="aboutUsDiv" >
       
-      <img src={props.aboutUs?props.aboutUs.imagen:'aboutUs vacio'} alt="img" style={{height:200, maxWidth:`100%`}}/>
+      <img className= "aboutUsImg" src={props.aboutUs.imagen} alt="img" />
 
-      <h2>{props.aboutUs?props.aboutUs.nombre:'aboutUs vacio'}</h2>
+      <h2>{props.aboutUs.nombre}</h2>
 
-      <p>{props.aboutUs?props.aboutUs.Ocupacion:'aboutUs vacio'}</p>
+      <p>{props.aboutUs.Ocupacion}</p>
 
     </div>
   )
