@@ -37,9 +37,9 @@ const AboutUsPage = () => {
   return (
     <div
       style={{
-        display: `grid`,
-        width: `900px`,
-        justifyContent: `space-between`,
+        display: `flex`,
+        width: `auto`,
+        justifyContent: `space-evenly`,
         gap: 10,
         flexDirection: `row`,
         gridTemplateColumns: `repeat (4, 1fr)`,
