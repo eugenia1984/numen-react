@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutUs } from "../components/aboutus/AboutUs";
+import { AboutUsPage } from "../components/aboutus/AboutUsPage";
 import { Banner } from "../components/banner/Banner";
 import { Carousel } from "../components/carousel/Carousel";
 import { Combo } from "../components/combo/Combo";
@@ -13,10 +13,10 @@ return (
     <>
         <Banner />
         <Products />
-        <AboutUs />
         <Features />
         <Partner />
         <Combo />
+        <AboutUsPage/>
         <Carousel />
         <SocialMedia />
     </>
