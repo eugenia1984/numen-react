@@ -3,52 +3,50 @@ import imagenEuge from "./imgs/euge.jpeg";
 import imagenEkel from "./imgs/ekel.jpeg";
 import imagenTincho from "./imgs/tincho.jpeg";
 import imagenJuli from "./imgs/juli.jpeg";
-import { AboutUs } from "./AboutUs";
+import CardUser from "./Cards";
 
-const AboutUsPage = () => {
-  const aboutUsEuge = {
+const usuarios= [
+  {
     id: 1,
-    nombre: `Maria Eugenia`,
+    nombre: `Maria Eugenia Costa`,
     Ocupacion: `Team Leader`,
     imagen: imagenEuge,
-  };
+  },
 
-  const aboutUsEkel = {
+  {
     id: 2,
     nombre: `Ekel Leal`,
     Ocupacion: `FrontEnd Developer`,
     imagen: imagenEkel,
-  };
-
-  const aboutUsTincho = {
+  },
+  {
     id: 3,
-    nombre: `Martín La Rosa`,
+    nombre: `Martín Larrosa`,
     Ocupacion: `BackEnd Developer`,
     imagen: imagenTincho,
-  };
+  },
 
-  const aboutUsJuli = {
+  {
     id: 4,
     nombre: `Julieta Marcer`,
     Ocupacion: `UX/UI Designer`,
     imagen: imagenJuli,
-  };
+  },
 
+
+]
+const AboutUsPage = () => {
+   
   return (
-    <div
-      style={{
-        display: `flex`,
-        width: `auto`,
-        justifyContent: `space-evenly`,
-        gap: 10,
-        flexDirection: `row`,
-        gridTemplateColumns: `repeat (4, 1fr)`,
-      }}
-    >
-      <AboutUs aboutUs={aboutUsEuge} />
+    <div style={{display: "flex" , gap: 10, flexWrap: "wrap", width:"100vw"}} >
+      {usuarios.map((item)=>
+      <CardUser img={item.imagen} name={item.nombre}/>
+      )}
+   
+     { /*<AboutUs aboutUs={aboutUsEuge} />
       <AboutUs aboutUs={aboutUsEkel} />
       <AboutUs aboutUs={aboutUsTincho} />
-      <AboutUs aboutUs={aboutUsJuli} />
+    <AboutUs aboutUs={aboutUsJuli} /> */}
     </div>
   );
 };
