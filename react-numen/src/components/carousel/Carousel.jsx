@@ -1,9 +1,11 @@
-import React from 'react'
+import SwipeableTextMobileStepper from "./CarouselMUI";
 
 const Carousel = () => {
   return (
-    <div>Carousel</div>
-  )
-}
+    <div>
+      <SwipeableTextMobileStepper />
+    </div>
+  );
+};
 
 export {Carousel};

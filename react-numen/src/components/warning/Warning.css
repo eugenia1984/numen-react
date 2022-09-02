@@ -5,21 +5,23 @@
 
 .warningDiv {
 background-color: aquamarine;
-height: 35px;
+height: 25px;
 width: auto;
 text-align: center;
 line-height: normal;
 padding: 0px;
 margin: 0px;
+padding-top: 10px;
 
 }
 
 .bottonWarning{
+float:right;
 background-color: beige;
-border-radius: 8px;
-text-align:right;
+border-radius: 4px;
 font-weight: 900px ;
-font-size: 20px;
+font-size: 15px;
+margin-right: 5px;
 
 
 

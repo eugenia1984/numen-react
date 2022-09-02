@@ -1,0 +1,8 @@
+.divAU {
+
+    display: flex;
+    gap: 10 px;
+    flex-wrap:wrap ;
+    width: 100vw;
+    
+}

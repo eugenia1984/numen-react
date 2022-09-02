@@ -4,32 +4,33 @@ import imagenEkel from "./imgs/ekel.jpeg";
 import imagenTincho from "./imgs/tincho.jpeg";
 import imagenJuli from "./imgs/juli.jpeg";
 import CardUser from "./Cards";
+import "./AboutUsPage.css";
 
 const usuarios= [
   {
     id: 1,
     nombre: `Maria Eugenia Costa`,
-    Ocupacion: `Team Leader`,
+    ocupacion: `Team Leader`,
     imagen: imagenEuge,
   },
 
   {
     id: 2,
     nombre: `Ekel Leal`,
-    Ocupacion: `FrontEnd Developer`,
+    ocupacion: `FrontEnd Developer`,
     imagen: imagenEkel,
   },
   {
     id: 3,
     nombre: `Martín Larrosa`,
-    Ocupacion: `BackEnd Developer`,
+    ocupacion: `BackEnd Developer`,
     imagen: imagenTincho,
   },
 
   {
     id: 4,
     nombre: `Julieta Marcer`,
-    Ocupacion: `UX/UI Designer`,
+    ocupacion: `UX/UI Designer`,
     imagen: imagenJuli,
   },
 
@@ -38,15 +39,11 @@ const usuarios= [
 const AboutUsPage = () => {
    
   return (
-    <div style={{display: "flex" , gap: 10, flexWrap: "wrap", width:"100vw"}} >
+    <div className="divAU"  >
       {usuarios.map((item)=>
-      <CardUser img={item.imagen} name={item.nombre}/>
+      <CardUser img={item.imagen} name={item.nombre} ocupacion={item.ocupacion}/>
       )}
-   
-     { /*<AboutUs aboutUs={aboutUsEuge} />
-      <AboutUs aboutUs={aboutUsEkel} />
-      <AboutUs aboutUs={aboutUsTincho} />
-    <AboutUs aboutUs={aboutUsJuli} /> */}
+
     </div>
   );
 };
