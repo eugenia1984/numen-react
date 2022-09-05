@@ -1,8 +1,12 @@
 .divAU {
 
+    height:auto;
+    max-height: 100vh;
     display: flex;
-    gap: 10 px;
+    gap: 10px;
     flex-wrap:wrap ;
     width: 100vw;
+    margin-left: 7px;
+    
     
 }

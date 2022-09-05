@@ -1,0 +1,24 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divCarousel {
+
+height: 400px;
+width: auto;
+display: flex;
+background-color: #7583b1;
+align-items: center;
+justify-content: center;
+font: ;
+
+}

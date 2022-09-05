@@ -1,8 +1,8 @@
 import SwipeableTextMobileStepper from "./CarouselMUI";
-
+import "./carousel.css"
 const Carousel = () => {
   return (
-    <div>
+    <div className="divCarousel">
       <SwipeableTextMobileStepper />
     </div>
   );

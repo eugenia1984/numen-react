@@ -15,6 +15,7 @@ export default function CardUser({img,name,ocupacion}) {
           display= "flex"
           image={img}
           alt="fotoAU"
+        
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
