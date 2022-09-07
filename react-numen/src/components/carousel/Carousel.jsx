@@ -6,4 +6,4 @@ const Carousel = () => {
   )
 }
 
-export {Carousel};
+export default Carousel;

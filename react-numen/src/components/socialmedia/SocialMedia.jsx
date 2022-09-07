@@ -6,4 +6,4 @@ const SocialMedia = () => {
   )
 }
 
-export {SocialMedia};
+export default SocialMedia;

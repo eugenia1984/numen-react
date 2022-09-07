@@ -6,4 +6,4 @@ const Banner = () => {
   )
 }
 
-export {Banner};
+export default Banner;

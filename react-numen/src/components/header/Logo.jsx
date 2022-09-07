@@ -12,18 +12,19 @@ const Logo = () => {
         sx={{
           mr: 2,
           display: { xs: "none", md: "flex" },
-          fontFamily: "monospace",
+          fontFamily: "sans-serif",
           fontWeight: 700,
-          letterSpacing: ".3rem",
-          color: "inherit",
+          letterSpacing: ".1rem",
+          color: "#99e6fa",
           textDecoration: "none",
+         
         }}
       >
         DEV.PASSION
       </Typography>
 
       <Typography
-        variant="h5"
+        variant="h6"
         noWrap
         component="a"
         href=""
@@ -31,11 +32,12 @@ const Logo = () => {
           mr: 2,
           display: { xs: "flex", md: "none" },
           flexGrow: 1,
-          fontFamily: "monospace",
+          fontFamily: "sans-serif",
           fontWeight: 700,
-          letterSpacing: ".3rem",
-          color: "inherit",
+          letterSpacing: ".1rem",
+          color: "#99e6fa",
           textDecoration: "none",
+         
         }}
       >
         DEV.PASSION

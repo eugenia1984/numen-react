@@ -2,8 +2,11 @@ import React from 'react'
 
 const Contacto = () => {
   return (
-    <div>Contacto</div>
+    <>
+    
+    <div>This is Contacto</div>
+    </>
   )
 }
 
-export {Contacto}
+export default Contacto

@@ -3,6 +3,9 @@ import Logo  from "./Logo";
 import Icons from "./Icons";
 import ResponsiveAppBar from './ResponsiveAppBar';
 
+
+
+
 const Header = () => {
   return (
     <>
@@ -13,4 +16,4 @@ const Header = () => {
   )
 }
 
-export {Header};
+export default Header;
