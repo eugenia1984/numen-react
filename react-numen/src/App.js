@@ -1,7 +1,6 @@
 import  Home  from "./pages/Home";
 import  Header  from "./components/header/Header";
 import  Footer  from "./components/footer/Footer";
-
 import  Warning  from "./components/warning/Warning";
 import  Contacto  from "./pages/Contacto";
 import  {ThemeProvider}  from "@mui/material";
@@ -18,7 +17,7 @@ function App() {
       <Header />
       <Routes>
        
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/"  element={<Home />} />
         <Route exact path="/Aboutus" element={<AboutUs />} />
         <Route exact path="/Productos" element={<Productos />} />
         <Route exact path="/Contacto" element={<Contacto />} />
