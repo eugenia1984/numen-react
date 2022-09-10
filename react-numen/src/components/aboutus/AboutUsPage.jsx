@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import imagenEuge from "./imgs/euge.jpeg";
 import imagenEkel from "./imgs/ekel.jpeg";
 import imagenTincho from "./imgs/tincho.jpeg";
@@ -37,10 +38,19 @@ const usuarios= [
 
 ]
 const AboutUsPage = () => {
+const [usuario, setusuario] = useState([])
+
+useEffect(() => {
+   axios("http://localhost:3001/usuarios").then(res =>
+   setusuario(res.data))
+  
+
+}, [] )
+
    
   return (
     <div className="divAU"  >
-      {usuarios.map((item)=>
+      {usuario && usuario.map((item)=>
       <CardUser img={item.imagen} name={item.nombre} ocupacion={item.ocupacion}/>
       )}
 

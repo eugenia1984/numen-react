@@ -2,7 +2,6 @@ import React from "react";
 import { AboutUsPage } from "../components/aboutus/AboutUsPage";
 import { Banner } from "../components/banner/Banner";
 import { Carousel } from "../components/carousel/Carousel";
-import { Combo } from "../components/combo/Combo";
 import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
 import { Products } from "../components/products/Products";
@@ -13,9 +12,9 @@ return (
     <>
         <Banner />
         <Products />
-        <Features />
+        <Features id={1}/>
         <Partner />
-        <Combo />
+        <Features id={2}/>
         <AboutUsPage/>
         <Carousel />
         <SocialMedia />

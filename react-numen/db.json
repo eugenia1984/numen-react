@@ -1,0 +1,32 @@
+{
+    "usuarios": [
+        {
+          "id": 1,
+          "nombre": "Maria Eugenia Costa",
+          "ocupacion": "Team Leader",
+          "imagen": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png"
+        },
+      
+        {
+          "id": 2,
+          "nombre": "Ekel Leal",
+          "ocupacion": "FrontEnd Developer",
+          "imagen": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png"
+        },
+        {
+          "id": 3,
+          "nombre": "Martín Larrosa",
+          "ocupacion": "BackEnd Developer",
+          "imagen": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png"
+        },
+      
+        {
+          "id": 4,
+          "nombre": "Julieta Marcer",
+          "ocupacion": "UX/UI Designer",
+          "imagen": "https://cdn.pixabay.com/photo/2014/04/03/10/32/user-310807_1280.png"
+        }
+      
+      
+      ]
+  }

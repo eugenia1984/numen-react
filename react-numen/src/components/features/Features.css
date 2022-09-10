@@ -1,0 +1,38 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divFTR{
+    display: flex;
+    width: 100%;
+
+}
+
+.subDiv{
+    width: 100%;
+    display:flex;
+    gap: 15px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.imgFTR{
+    width: 80%;
+
+}
+
+.txtFTR{
+    width: 80%;
+
+}
