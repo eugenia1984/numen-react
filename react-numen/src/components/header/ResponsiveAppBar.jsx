@@ -22,7 +22,7 @@ const pages = [
   },
   {
     name: "Productos",
-    path: "/products",
+    path: "/Productos",
   },
   {
     name: "AboutUs",

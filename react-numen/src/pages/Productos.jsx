@@ -1,13 +1,28 @@
-
-import React from 'react'
+import { Container } from "@mui/material";
+import { Box } from "@mui/system";
+import React from "react";
+import ImgMediaCard from "../components/products/ImgMediaCard";
 
 const Productos = () => {
   return (
-    <>
-    <div>This is Products</div>
-    <h4>Que Pasa</h4>
-    </>
-  )
-}
+    <Container>
+      <Box
+        sx={{
+          display: {
+            xs: "flex",
+            justifyContent: "center",
+            gap: 50,
+            flexWrap: "wrap",
+          },
+        }}
+      >
+        <ImgMediaCard />
+        <ImgMediaCard />
+        <ImgMediaCard />
+        <ImgMediaCard />
+      </Box>
+    </Container>
+  );
+};
 
-export default Productos
+export default Productos;
