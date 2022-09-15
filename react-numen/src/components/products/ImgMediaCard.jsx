@@ -1,33 +1,42 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
-export default function ImgMediaCard() {
+import Typography from '@mui/material/Typography';
+import { Box } from '@mui/system';
+
+
+
+
+
+export default function ImgMediaCard({image,name,description,price} ) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+   <Box sx={{mb:2}}>
+  
+    <Card sx={{ maxWidth: 345} }>
+ 
       <CardMedia
         component="img"
-        alt="green iguana"
+        alt=""
         height="140"
-        image="https://cdn.pixabay.com/photo/2022/09/07/10/01/landscape-7438429_1280.jpg"
+        image={image}
+        
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {price}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
+   
+</Box>
   );
 }
