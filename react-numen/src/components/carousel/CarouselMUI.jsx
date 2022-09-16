@@ -1,4 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
@@ -12,11 +14,13 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const images = [
+
+
+const imagesOrig = [
   {
-    label: 'San Francisco  Oakland Bay Bridge, United States',
+    label: 'Bit Coin News',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      'https://cdn.pixabay.com/photo/2017/08/22/09/13/bitcoin-2668212_1280.jpg',
   },
   {
     label: 'Bird',
@@ -36,9 +40,22 @@ const images = [
 ];
 
 function SwipeableTextMobileStepper() {
+  const [images, setimages] = useState([])
+  const [maxSteps, setmaxSteps] = useState(0)
+  const [activeStep, setActiveStep] =  useState(0)
+
+  useEffect(() => {
+    axios("http://localhost:3001/imgCarrusel").then(res =>
+    setimages(res.data)).then(() => 
+      setmaxSteps(10).then(() => 
+        setActiveStep(0)
+      )
+    )
+    
+  }, [] )
+  console.log('images ' + images);
   const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = images.length;
+  
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -48,12 +65,14 @@ function SwipeableTextMobileStepper() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleStepChange = (step: number) => {
+  const handleStepChange = (step) => {
     setActiveStep(step);
   };
 
   return (
-    <Box  sx={{ maxWidth: 400, flexGrow: 1 }}>
+   
+   <Box  sx={{ maxWidth: 400, flexGrow: 1 }}>
+      
       <Paper
         square
         elevation={0}
@@ -65,7 +84,7 @@ function SwipeableTextMobileStepper() {
           bgcolor: 'background.default',
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <Typography>{(images && images.length > 0 && activeStep != null) ? images[activeStep].label : ''} </Typography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

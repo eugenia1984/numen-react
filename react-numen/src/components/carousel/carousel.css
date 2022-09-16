@@ -19,6 +19,11 @@ display: flex;
 background-color: #7583b1;
 align-items: center;
 justify-content: center;
-font: ;
+/*font: ;*/
 
+}
+
+.h2carrusel{
+
+  text-align: center;
 }
