@@ -10,3 +10,20 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.box{
+  width: 80%;
+}
+
+.grid-responsive {
+  display: grid;
+  grid: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product{
+  border: 2px solid #99E6FA;
+  text-align: center;
+  padding: 5px;
+}
+
