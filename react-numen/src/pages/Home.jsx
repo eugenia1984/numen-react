@@ -5,7 +5,7 @@ import { Carousel } from "../components/carousel/Carousel";
 import { Combo } from "../components/combo/Combo";
 import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
-import { Products } from "../components/products/Products";
+import { Products } from "../components/products/Product";
 import { SocialMedia } from "../components/socialmedia/SocialMedia";
 
 const Home = () => {
