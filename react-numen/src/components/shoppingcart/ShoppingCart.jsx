@@ -1,10 +1,12 @@
-import React from 'react'
-import ItemCart from '../products/itemcart';
-import { Product } from '../products/Product';
+import React, {useReducer} from 'react'
+import { shoppingInitialState, shoppingReducer } from '../../reducers/shoppingReducers';
+import ItemCart from '../products/ItemCart';
+import Product from '../products/Product';
+
 
 const ShoppingCart = () => {
 
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState )
   const { products, cart } = state
   const addToCart = () => { };
 
@@ -30,4 +32,4 @@ const ShoppingCart = () => {
   )
 }
 
-export default  ShoppingCart
+export default ShoppingCart;

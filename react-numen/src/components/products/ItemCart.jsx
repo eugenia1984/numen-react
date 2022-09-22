@@ -1,4 +1,4 @@
-const Products = () => {
+const ItemCart = () => {
     return (
         <div className="product">
             <h4>Product Name</h4>
