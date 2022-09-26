@@ -11,7 +11,7 @@ export const themeCustom = createTheme({
     secondary: {
         light: "#ff7961",
         main: "#73fbfd",
-        dark: "#ba000d",
+        dark: "#73fbf2",
         contrastText: "#000",
     },
     typography: {

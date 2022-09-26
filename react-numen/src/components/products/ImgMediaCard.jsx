@@ -6,6 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
+import { Button } from '@mui/material';
+
 
 
 
@@ -13,9 +15,9 @@ import { Box } from '@mui/system';
 
 export default function ImgMediaCard({image,name,description,price} ) {
   return (
-   <Box sx={{mb:2}}>
+   <Box >
   
-    <Card sx={{ maxWidth: 345} }>
+    <Card sx={{ minWidth: 345, maxWidth: 345, textAlign: "center", display: { xs: 'block'}} }>
  
       <CardMedia
         component="img"
@@ -34,6 +36,7 @@ export default function ImgMediaCard({image,name,description,price} ) {
         <Typography variant="body2" color="text.secondary">
           {price}
         </Typography>
+        <Button sx={{ mt: 2}}variant="contained" color="secondary">Click</Button>
       </CardContent>
     </Card>
    
