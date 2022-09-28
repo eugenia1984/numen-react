@@ -6,4 +6,4 @@ const Combo = () => {
   )
 }
 
-export {Combo};
+export default Combo;

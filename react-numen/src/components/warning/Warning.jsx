@@ -19,4 +19,4 @@ return (
 )
 }
 
-export {Warning};
+export default Warning;

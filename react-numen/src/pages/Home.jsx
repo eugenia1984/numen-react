@@ -6,7 +6,7 @@ import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
 import { Products } from "../components/products/Products";
 import { SocialMedia } from "../components/socialmedia/SocialMedia";
-
+import  Contacto from "./Contacto";
 const Home = () => {
 return (
     <>
@@ -18,8 +18,9 @@ return (
         <AboutUsPage/>
         <Carousel />
         <SocialMedia />
+        <Contacto/>
     </>
 );
 };
 
-export { Home };
+export default Home ;

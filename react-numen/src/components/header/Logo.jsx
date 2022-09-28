@@ -1,9 +1,49 @@
-import React from 'react'
+import React from "react";
+import Typography from "@mui/material/Typography";
 
 const Logo = () => {
   return (
-    <div>Logo</div>
-  )
-}
+    <>
+      <Typography
+        variant="h6"
+        noWrap
+        component="a"
+        href="/"
+        sx={{
+          mr: 2,
+          display: { xs: "none", md: "flex" },
+          fontFamily: "sans-serif",
+          fontWeight: 700,
+          letterSpacing: ".1rem",
+          color: "#99e6fa",
+          textDecoration: "none",
+         
+        }}
+      >
+        DEV.PASSION
+      </Typography>
 
-export {Logo};
+      <Typography
+        variant="h6"
+        noWrap
+        component="a"
+        href=""
+        sx={{
+          mr: 2,
+          display: { xs: "flex", md: "none" },
+          flexGrow: 1,
+          fontFamily: "sans-serif",
+          fontWeight: 700,
+          letterSpacing: ".1rem",
+          color: "#99e6fa",
+          textDecoration: "none",
+         
+        }}
+      >
+        DEV.PASSION
+      </Typography>
+    </>
+  );
+};
+
+export default Logo;
