@@ -18,7 +18,6 @@ return (
         <AboutUsPage/>
         <Carousel />
         <SocialMedia />
-        <Contacto/>
     </>
 );
 };
