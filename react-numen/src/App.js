@@ -10,7 +10,11 @@ import AboutUs from "./pages/AboutUs";
 import Productos from "./pages/Productos";
 
 
+
+
 function App() {
+
+
   return (
     <ThemeProvider theme={themeCustom}>
       <Warning />
@@ -22,6 +26,8 @@ function App() {
         <Route exact path="/Productos" element={<Productos />} />
         <Route exact path="/Contacto" element={<Contacto />} />
       </Routes>
+
+      
       <Footer />
     </ThemeProvider>
   );

@@ -1,9 +1,22 @@
-import React from 'react'
+import {useState} from "react"; 
+import './Warning.css';
 
-const Warning = () => {
-  return (
-    <div>Warning</div>
-  )
+
+function Warning() {
+
+
+const [estado, setEstado] = useState(true);
+
+ 
+return (
+  <>
+    { estado && <div className='warningDiv'>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <button className='bottonWarning' onClick={() => setEstado(false)}> X </button> </p>
+
+    </div> }
+  </>
+)
 }
 
 export default Warning;
