@@ -10,7 +10,11 @@ import  {Route, Routes}  from "react-router-dom";
 import Productos from "./pages/Productos";
 
 
+
+
 function App() {
+
+
   return (
     <ThemeProvider theme={themeCustom}>
       <Warning />
@@ -21,6 +25,8 @@ function App() {
         <Route exact path="/Productos" element={<Productos />} />
       
       </Routes>
+
+      
       <Footer />
     </ThemeProvider>
   );
