@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.warningDiv {
+background-color: aquamarine;
+height: 35px;
+width: auto;
+text-align: center;
+line-height: normal;
+padding: 0px;
+margin: 0px;
+padding-top: 10px;
+
+}
+
+.bottonWarning{
+float:right;
+background-color: beige;
+border-radius: 4px;
+font-weight: 900px ;
+font-size: 15px;
+margin-right: 5px;
+
+
+
+}

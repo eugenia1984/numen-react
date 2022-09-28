@@ -5,7 +5,11 @@ import { Footer } from "./components/footer/Footer";
 import { Products } from "./pages/Products";
 import { Warning } from "./components/warning/Warning";
 
+
+
 function App() {
+
+
   return (
     <>
     <Warning/>
@@ -14,6 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
       </Routes>
+
+      
       <Footer />
     </>
   );
