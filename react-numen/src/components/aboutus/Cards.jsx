@@ -17,7 +17,7 @@ export default function CardUser({img,name,ocupacion}) {
           alt="fotoAU"
         
         />
-        <CardContent>
+        <CardContent className='cardstyle'>
           <Typography gutterBottom variant="h5" component="div">
             {name}
           </Typography>

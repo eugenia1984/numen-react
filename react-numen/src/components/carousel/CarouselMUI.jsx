@@ -15,30 +15,6 @@ import { autoPlay } from 'react-swipeable-views-utils';
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
-
-const imagesOrig = [
-  {
-    label: 'Bit Coin News',
-    imgPath:
-      'https://cdn.pixabay.com/photo/2017/08/22/09/13/bitcoin-2668212_1280.jpg',
-  },
-  {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-  {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
-  },
-  {
-    label: 'Goč, Serbia',
-    imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-  },
-];
-
 function SwipeableTextMobileStepper() {
   const [images, setimages] = useState([])
   const [maxSteps, setmaxSteps] = useState(0)
@@ -78,6 +54,7 @@ function SwipeableTextMobileStepper() {
         elevation={0}
         sx={{
           display: 'flex',
+          flexWrap: 'wrap',
           alignItems: 'center',
           height: 50,
           pl: 2,
@@ -93,7 +70,7 @@ function SwipeableTextMobileStepper() {
         enableMouseEvents
       >
         {images.map((step, index) => (
-          <div key={step.label}>
+          <div  key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"

@@ -2,6 +2,8 @@ import imgTech from "./imgFTR/tech.jpg";
 import imgIA from "./imgFTR/AI.jpg";
 import "./Features.css";
 
+/*falta que quede responsive*/ 
+
 const notaConImagen = [
   {
     id: 1,
@@ -14,7 +16,7 @@ const notaConImagen = [
     id: 2,
     imagen: imgIA,
     texto:
-      "Lorem illum ullam nesciunt at reiciendis enim delectus quos vero dolor",
+      "Proximamante estaremos incorporando a nuestros servicios la posibilidades de agregar en los diseños de nuestro clientes Inteligencia Artificial, Realidad Aumentada y Motion Design. Creemos que para estar a la vanguardia debemos estar lineados con las últimas y mas solicitadas tecnologias.",
   },
 ];
 
