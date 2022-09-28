@@ -56,4 +56,4 @@ const SocialMedia = () => {
   );
 };
 
-export default SocialMedia;
+export  {SocialMedia};
