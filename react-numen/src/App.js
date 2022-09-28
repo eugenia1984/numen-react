@@ -1,21 +1,34 @@
-import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Header } from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
-import { Products } from "./pages/Products";
-import { Warning } from "./components/warning/Warning";
+import  Home  from "./pages/Home";
+import  Header  from "./components/header/Header";
+import  Footer  from "./components/footer/Footer";
+import  Warning  from "./components/warning/Warning";
+
+import  {ThemeProvider}  from "@mui/material";
+import  {themeCustom}  from "./components/styles/themeCustom";
+import  {Route, Routes}  from "react-router-dom";
+
+import Productos from "./pages/Productos";
+
+
+
 
 function App() {
+
+
   return (
-    <>
-    <Warning/>
+    <ThemeProvider theme={themeCustom}>
+      <Warning />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+       
+        <Route exact path="/"  element={<Home />} />
+        <Route exact path="/Productos" element={<Productos />} />
+      
       </Routes>
+
+      
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 
