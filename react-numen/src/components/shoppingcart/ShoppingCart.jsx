@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react';
 import { shoppingInitialState, shoppingReducer } from '../../reducers/shoppingReducers';
+import { TYPES } from '../actions/ShoppingCartActions';
 import ItemCart from '../products/ItemCart';
 import Product from '../products/Product';
 
@@ -7,12 +8,21 @@ import Product from '../products/Product';
 const ShoppingCart = () => {
 
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+
   const { products, cart } = state
-  const addToCart = () => { };
 
-  const deleteFromCart = () => { };
+  const addToCart = (id) => {
+    console.log(id);
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+  };
 
-  const clearCart = () => { };
+  const deleteFromCart = (id) => {
+    dispatch({ type: TYPES.REMOVE_PRODUCT, payload: id })
+  };
+
+  const clearCart = () => { 
+    dispatch({type:TYPES.CLEAR_CART})
+  };
 
 
   return (

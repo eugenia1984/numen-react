@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Product = ({data, addToCart}) => {
+const Product = ({ data, addToCart }) => {
   const { id, name, price, description } = data
   return (
     <div className="product">
