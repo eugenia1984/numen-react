@@ -4,7 +4,6 @@ import { Banner } from "../components/banner/Banner";
 import { Carousel } from "../components/carousel/Carousel";
 import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
-
 import { SocialMedia } from "../components/socialmedia/SocialMedia";
 import Productos from "./Productos";
 

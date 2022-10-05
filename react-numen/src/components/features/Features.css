@@ -1,53 +1,36 @@
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .divFTR{
-    display: flex;
-    width: 100%;
-
+  display: flex;
+  width: 100%;
 }
 
 .subDiv{
   min-height: 200px;
-    width: 100%;
-    display:flex;
-    gap: 30px;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #ffebcd;
-    border-radius: 8px;
-    border: 2px solid black;
-   
+  width: 100%;
+  display:flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ffebcd;
+  border-radius: 8px;
+  border: 2px solid black; 
 }
 
 .imgFTR{
-    width: 50%;
-    
-    display: inline-block;
-
+  width: 50%;
+  display: inline-block;
 }
 
 .txtFTR{
-  
   display: inline-block;
-    width: 50%;
-    margin-top:20vh;
-    font-size: larger;
-    text-align: center;
-
+  width: 50%;
+  margin-top:20vh;
+  font-size: larger;
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
-      .subdiv{display: initial;}
+  .subdiv {
+    display: initial;
+  }
 }

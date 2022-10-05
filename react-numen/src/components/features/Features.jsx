@@ -1,7 +1,6 @@
 import imgTech from "./imgFTR/tech.jpg";
 import imgIA from "./imgFTR/AI.jpg";
 import "./Features.css";
-
 /*falta que quede responsive*/ 
 
 const notaConImagen = [

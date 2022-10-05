@@ -14,25 +14,22 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-
 function SwipeableTextMobileStepper() {
   const [images, setimages] = useState([])
   const [maxSteps, setmaxSteps] = useState(0)
   const [activeStep, setActiveStep] =  useState(0)
 
   useEffect(() => {
-    axios("http://localhost:3001/imgCarrusel").then(res =>
-    setimages(res.data)).then(() => 
-      setmaxSteps(10).then(() => 
-        setActiveStep(0)
+    axios("http://localhost:3001/imgCarrusel")
+      .then(res => setimages(res.data))
+      .then(() => setmaxSteps(10)
+      .then(() => setActiveStep(0)
       )
     )
-    
   }, [] )
   console.log('images ' + images);
   const theme = useTheme();
   
-
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -46,9 +43,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-   
-   <Box  sx={{ maxWidth: 400, flexGrow: 1 }}>
-      
+    <Box  sx={{ maxWidth: 400, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -122,5 +117,3 @@ function SwipeableTextMobileStepper() {
 }
 
 export default SwipeableTextMobileStepper;
-
- 
