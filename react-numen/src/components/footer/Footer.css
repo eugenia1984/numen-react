@@ -1,0 +1,30 @@
+.main-footer {
+  color: white!important;
+  background-color: #111010;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer-logo  {
+  padding-left: 20px;
+}
+
+.main-footer-item {
+  color: white;
+}
+
+.main-footer-link {
+  padding: 20px!important;
+  color: #99e6fa !important;
+}
+
+.main-footer-link:hover {
+  color: white;
+}
+
+.main-footer-copyright {
+  text-align: center;
+  padding-bottom: 32px;
+}

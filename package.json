@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "mui-image": "^1.0.7"
+  }
+}

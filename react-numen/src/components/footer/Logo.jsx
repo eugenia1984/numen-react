@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
+import "./Footer.css";
 
 const Logo = () => {
   return (
@@ -16,9 +17,9 @@ const Logo = () => {
           fontWeight: 700,
           letterSpacing: ".1rem",
           color: "#99e6fa",
-          textDecoration: "none",
-         
+          textDecoration: "none",         
         }}
+        className="main-footer-logo"
       >
         DEV.PASSION
       </Typography>
@@ -37,8 +38,8 @@ const Logo = () => {
           letterSpacing: ".1rem",
           color: "#99e6fa",
           textDecoration: "none",
-         
         }}
+        className="main-footer-logo"
       >
         DEV.PASSION
       </Typography>

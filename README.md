@@ -92,7 +92,7 @@ El proyecto consistirá en realizar una aplicación web en React, respetando el 
 
 ## Para poder ver este repositorio en tu local:
 
-Luego de bajarte el repositorio corre ```nmp install``` y luego ```npm start``` ya situado dentro dle proyecto.
+Luego de bajarte el repositorio corre ```nmp install``` y luego ```npm start``` ya situado dentro del proyecto.
 
 ---
 

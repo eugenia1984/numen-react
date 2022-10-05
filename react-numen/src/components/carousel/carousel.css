@@ -1,0 +1,23 @@
+.divPadreCrs{
+  max-width:345 ;
+  min-width: 345 ;
+  margin-top: 50px;
+  width: 100vw;
+  height: 50vh;
+  flex-grow: 1;
+}
+
+.divCarousel {
+  height: 50vh;
+  width: auto;
+  display: flex;
+  background-color: #7583b1;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2carrusel{
+  height: auto;
+  text-align: center;
+  font: Monserrat;
+}

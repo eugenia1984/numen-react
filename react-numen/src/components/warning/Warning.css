@@ -1,0 +1,25 @@
+.warningDiv {
+  background-color: aquamarine;
+  height: 42px;
+  width: auto;
+  text-align: center;
+  line-height: normal;
+  padding: 0px;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 765px) {
+  .warningDiv {
+    height: 62px;
+  }
+}
+
+.bottonWarning{
+  float:right;
+  background-color: beige;
+  border-radius: 4px;
+  font-weight: 900px ;
+  font-size: 15px;
+  margin-right: 5px;
+}

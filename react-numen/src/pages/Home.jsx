@@ -1,26 +1,29 @@
 import React from "react";
-import { AboutUs } from "../components/aboutus/AboutUs";
+import { AboutUsPage } from "../components/aboutus/AboutUsPage";
 import { Banner } from "../components/banner/Banner";
 import { Carousel } from "../components/carousel/Carousel";
-import { Combo } from "../components/combo/Combo";
 import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
+
 import ShoppingCart from "../components/shoppingcart/ShoppingCart";
+
 import { SocialMedia } from "../components/socialmedia/SocialMedia";
+import Productos from "./Productos";
 
 const Home = () => {
 return (
     <>
         <Banner />
         <ShoppingCart/>
-        <AboutUs />
-        <Features />
+        <Productos />
+        <Features id={1}/>
         <Partner />
-        <Combo />
+        <Features id={2}/>
+        <AboutUsPage/>
         <Carousel />
         <SocialMedia />
     </>
 );
 };
 
-export { Home };
+export default Home ;

@@ -1,0 +1,21 @@
+.divAU {
+  height:auto;
+  max-height: 80vh;
+  max-width: 90vw;
+  display: flex;
+  flex-wrap:wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 7px; 
+}
+
+.cardstyle{
+  text-align: center;
+}
+
+.css-1earw0c-MuiPaper-root-MuiCard-root {
+  min-width: 280px !important;
+  max-width: 290px !important;
+}

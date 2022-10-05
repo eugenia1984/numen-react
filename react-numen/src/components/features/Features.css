@@ -1,0 +1,36 @@
+.divFTR{
+  display: flex;
+  width: 100%;
+}
+
+.subDiv{
+  min-height: 200px;
+  width: 100%;
+  display:flex;
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ffebcd;
+  border-radius: 8px;
+  border: 2px solid black; 
+}
+
+.imgFTR{
+  width: 50%;
+  display: inline-block;
+}
+
+.txtFTR{
+  display: inline-block;
+  width: 50%;
+  margin-top:20vh;
+  font-size: larger;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .subdiv {
+    display: initial;
+  }
+}
