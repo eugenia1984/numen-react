@@ -1,5 +1,5 @@
 .main-footer {
-  color: white;
+  color: white!important;
   background-color: #111010;
   padding-top: 3em;
   position: relative;
@@ -17,6 +17,7 @@
 
 .main-footer-link {
   padding: 20px!important;
+  color: #99e6fa !important;
 }
 
 .main-footer-link:hover {

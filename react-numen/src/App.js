@@ -9,24 +9,16 @@ import  {Route, Routes}  from "react-router-dom";
 
 import Productos from "./pages/Productos";
 
-
-
-
 function App() {
-
 
   return (
     <ThemeProvider theme={themeCustom}>
       <Warning />
       <Header />
       <Routes>
-       
         <Route exact path="/"  element={<Home />} />
         <Route exact path="/Productos" element={<Productos />} />
-      
       </Routes>
-
-      
       <Footer />
     </ThemeProvider>
   );

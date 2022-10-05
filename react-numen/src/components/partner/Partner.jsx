@@ -6,4 +6,4 @@ const Partner = () => {
   )
 }
 
-export default Partner;
+export  {Partner};

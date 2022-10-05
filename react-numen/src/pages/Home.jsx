@@ -4,14 +4,15 @@ import { Banner } from "../components/banner/Banner";
 import { Carousel } from "../components/carousel/Carousel";
 import { Features } from "../components/features/Features";
 import { Partner } from "../components/partner/Partner";
-import { Products } from "../components/products/Products";
+
 import { SocialMedia } from "../components/socialmedia/SocialMedia";
-import  Contacto from "./Contacto";
+import Productos from "./Productos";
+
 const Home = () => {
 return (
     <>
         <Banner />
-        <Products />
+        <Productos />
         <Features id={1}/>
         <Partner />
         <Features id={2}/>
