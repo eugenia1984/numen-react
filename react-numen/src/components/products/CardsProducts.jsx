@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ImgMediaCard from "./ImgMediaCard";
 import { Box } from "@mui/material";
-
-
+import "./Products.css";
 
 const CardsProducts = () => {
   const [tipo, settipo] = useState([]);
 
   useEffect(() => {
-    axios("http://localhost:3001/cardsP").then(res =>
-      settipo(res.data)
+    axios("http://localhost:3001/cardsP")
+      .then(res => settipo(res.data)
     );
   }, [])
 

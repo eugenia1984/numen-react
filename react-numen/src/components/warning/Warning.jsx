@@ -11,7 +11,7 @@ const [estado, setEstado] = useState(true);
 return (
   <>
     { estado && <div className='warningDiv'>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <p>Aprovecha nuestras promociones para nuevos clientes
       <button className='bottonWarning' onClick={() => setEstado(false)}> X </button> </p>
 
     </div> }

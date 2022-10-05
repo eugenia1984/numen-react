@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import "./Partner.css";
+import Office from "../../assets/images/office.jpg";
 
 const Partner = () => {
-  return (
-    <div>Partner</div>
-  )
-}
+  const text ="WorkAndMates es nuestro partner";
 
-export  {Partner};
+  return (
+    <div className="partner">
+      <img 
+        src={Office}
+        alt="muebles de oficina"
+        className="partner-image"
+      />
+      <h2 className="partner-text">{text}</h2>
+    </div>
+  );
+};
+
+export {Partner};
