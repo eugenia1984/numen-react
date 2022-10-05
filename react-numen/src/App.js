@@ -1,3 +1,5 @@
+
+import ShoppingCart from "./components/shoppingcart/ShoppingCart";
 import  Home  from "./pages/Home";
 import  Header  from "./components/header/Header";
 import  Footer  from "./components/footer/Footer";
@@ -16,10 +18,11 @@ function App() {
       <Routes>
         <Route exact path="/"  element={<Home />} />
         <Route exact path="/Productos" element={<Productos />} />
+
       </Routes>
       <Footer />
     </ThemeProvider>
   );
 }
-
+// prueba
 export default App;

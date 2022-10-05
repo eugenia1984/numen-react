@@ -1,0 +1,5 @@
+export const TYPES = {
+    ADD_TO_CART:"ADD_TO_CART",
+    REMOVE_PRODUCT:"REMOVE_PRODUCT",
+    CLEAR_CART:"CLEAR_CART"
+}
