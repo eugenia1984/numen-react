@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState, useEffect } from 'react';
+import axios from 'axios';
 import { shoppingInitialState, shoppingReducer } from '../../reducers/shoppingReducers';
 import { TYPES } from '../actions/ShoppingCartActions';
 import ItemCart from '../products/ItemCart';
@@ -16,14 +17,31 @@ const ShoppingCart = () => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
-  const deleteFromCart = (id) => {
-    dispatch({ type: TYPES.REMOVE_PRODUCT, payload: id })
+  const deleteFromCart = (id, all = false) => {
+    console.log(id, all)
+    if (all) {
+      dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id })
+    } else {
+      dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id })
+    }
   };
 
-  const clearCart = () => { 
-    dispatch({type:TYPES.CLEAR_CART})
+  const clearCart = (id) => {
+    dispatch({ type: TYPES.CLEAR_CART, payload: id })
   };
 
+  const [tipo, settipo] = useState([]);
+
+  useEffect(() => {
+    axios("http://localhost:3001/cardsP")
+      .then(res => {
+        settipo(res.data)
+        dispatch({ type: TYPES.ADD_PRODUCTS, payload: res.data })
+      }
+      );
+  }, [])
+
+  console.log(cart);
 
   return (
     <div>
@@ -31,12 +49,17 @@ const ShoppingCart = () => {
       <div className="grid-responsive">
         {products.map((product) => <Product key={product.id} data={product} addToCart={addToCart} />)}
       </div>
-      <h3>Carrito</h3>
-      <div className="box">
-        {cart.map((item, index) => <ItemCart key={index}
-          data={item} deleteFromCart={deleteFromCart} />)}
+      <div className="carrito">
+        <h3>Carrito</h3>
+        <div className="box">
+          {cart.map((item, index) => <ItemCart key={index}
+            data={item} deleteFromCart={deleteFromCart} />)}
+
+        </div>
+        <div className="botonesCarrito">
+          <button className='buttonCart' onClick={clearCart}>Limpiar Carrito</button>
+        </div>
       </div>
-      <button className='buttons' onClick={clearCart}>Limpiar Carrito</button>
     </div>
   )
 }

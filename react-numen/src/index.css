@@ -8,6 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
 
+:root{
+  --turquesa:#57BCD6;
+  --turquesaClaro:#ACEBFB;
+  --negroAzulado:#21222d;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -34,15 +40,16 @@ body {
 .product{
   width: 300px;
   height: 420px;
-  position: relative;
-  background-color:turquoise;
+  /* position: relative; */
+  background-color:var(--turquesa);
   border-radius: 3% 3% 0 3%;
 }
 
 
-.product-img{
+.product-img img{
   height: 230px;
-  background-color: turquoise;
+  max-width: 100%;
+  background-color: var(--turquesa);
   background-repeat: no-repeat;
   background-position:  0 -75px;
   background-size: cover;
@@ -51,8 +58,8 @@ body {
 
 .product-detail{
   height: 190px;
-  background-color: #21222d;
-  border-radius: 0 40% 3% 3%;
+  background-color: var(--negroAzulado);
+  border-radius: 0 0 3% 3%;
   padding: 0.8rem;
   color: #fff;
 }
@@ -70,34 +77,57 @@ body {
 .price {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #57BCD6;
+  color: var(--turquesa);
   padding-left: 5%;
 }
 
+.carrito{
+  margin-top: 7%;
+}
+
 .buttons{
-  height: 65px;
-  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5%;
+}
+
+
+.botonesCarrito{
+  font-size: 1.1rem;
+  padding: 5%;
+}
+
+
+.botonesCarrito button.buttonCart , .btn-card{
+  border:none;
+  color:var(--turquesa);
+  background-color: var(--negroAzulado);
+  border-radius: 4%;
+}
+
+.botonesCarrito button.buttonCart{
+  border-radius: 4px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
 
 }
+
 
 .btn-card{
   position: relative;
-  background-color: #21222d;
-  border: none;
-  color: #57BCD6;
   box-shadow: 2px 2px 10px #3d3d3d , -2px -2px 10px #1a1a1a ;
   padding: 10px 4px;
-  border-radius: 4px;
   font-size: 1.1rem;
-  margin-right: 15%;
   padding: 5%;
-  
 }
 
-.btn-card:hover{
+
+
+.btn-card:hover, button.buttonCart:hover{
   box-shadow: inset 1px 1px 10px #000 , -1px -1px 10px #6a6464;
-  color: #ACEBFB ;
+  color: var(--turquesaClaro);
 }
