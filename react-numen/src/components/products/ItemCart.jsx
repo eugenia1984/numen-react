@@ -12,8 +12,8 @@ const ItemCart = ({ data, deleteFromCart }) => {
           <p> {description} </p>
           <div className="buttons">
             <div className="price"> $ {price} x {quantity} = ${price * quantity}</div>
-            <button className='btn-card' onClick={() => deleteFromCart(id)}>elimina uno</button>
-            <button className='btn-card' onClick={() => deleteFromCart(id)}>Delete</button>
+            <button className='btn-card' onClick={() => deleteFromCart(id)}>Delete x1</button>
+            <button className='btn-card' onClick={() => deleteFromCart(id,true)}>Delete All</button>
           </div>
         </div>
       </div>

@@ -17,8 +17,13 @@ const ShoppingCart = () => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
-  const deleteFromCart = (id) => {
-    dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id })
+  const deleteFromCart = (id, all = false) => {
+    console.log(id, all)
+    if (all) {
+      dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id })
+    } else {
+      dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id })
+    }
   };
 
   const clearCart = (id) => {
@@ -42,12 +47,17 @@ const ShoppingCart = () => {
       <div className="grid-responsive">
         {products.map((product) => <Product key={product.id} data={product} addToCart={addToCart} />)}
       </div>
-      <h3>Carrito</h3>
-      <div className="box">
-        {cart.map((item, index) => <ItemCart key={index}
-          data={item} deleteFromCart={deleteFromCart} />)}
+      <div className="carrito">
+        <h3>Carrito</h3>
+        <div className="box">
+          {cart.map((item, index) => <ItemCart key={index}
+            data={item} deleteFromCart={deleteFromCart} />)}
+
+        </div>
+        <div className="botonesCarrito">
+          <button className='buttonCart' onClick={clearCart}>Limpiar Carrito</button>
+        </div>
       </div>
-      <button className='buttons' onClick={clearCart}>Limpiar Carrito</button>
     </div>
   )
 }

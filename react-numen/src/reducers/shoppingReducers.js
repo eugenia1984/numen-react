@@ -15,7 +15,7 @@ export const shoppingReducer = (state, action) => {
     switch (action.type) {
         //dentro de state.product busca aquel producto igual al seleccionado, para despues retornar,agarra el estado actual de cart y agrega el nuevo item
         case TYPES.ADD_TO_CART: {
-            let newProduct = state.products.find(product => product.id === action.payload);
+            let newProduct = state.products.find((product) => product.id === action.payload);
             let productInCart = state.products.find((product) => product.id === newProduct.id);
             return productInCart
                 ? {
@@ -34,7 +34,20 @@ export const shoppingReducer = (state, action) => {
 
 
         case TYPES.REMOVE_ONE_PRODUCT: {
-
+            let productToDelete = state.cart.find((product) => product.id === action.payload);
+            return productToDelete.quantity > 1
+                ? {
+                    ...state,
+                    cart: state.cart.map((product) =>
+                        product.id === action.payload
+                            ? { ...product, quantity: product.quantity - 1 }
+                            : product
+                    ),
+                }
+                : {
+                    ...state,
+                    cart: state.cart.filter(product => product.id !== action.payload)
+                };
         }
 
         case TYPES.REMOVE_ALL_PRODUCTS: {
@@ -45,8 +58,6 @@ export const shoppingReducer = (state, action) => {
             }
 
 
-        
-
         }
 
         case TYPES.CLEAR_CART: {
@@ -55,7 +66,7 @@ export const shoppingReducer = (state, action) => {
                 cart: []
             }
         }
-        
+
         case TYPES.ADD_PRODUCTS: {
             return {
                 ...state,
