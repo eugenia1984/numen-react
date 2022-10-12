@@ -27,7 +27,7 @@ function SwipeableTextMobileStepper() {
       )
     )
   }, [] )
-  console.log('images ' + images);
+  // console.log('images ' + images);
   const theme = useTheme();
   
   const handleNext = () => {

@@ -15,18 +15,20 @@ export const shoppingReducer = (state, action) => {
     switch (action.type) {
         //dentro de state.product busca aquel producto igual al seleccionado, para despues retornar,agarra el estado actual de cart y agrega el nuevo item
         case TYPES.ADD_TO_CART: {
-            let newProduct = state.products.find((product) => product.id === action.payload);
-            let productInCart = state.products.find((product) => product.id === newProduct.id);
-            return productInCart
-                ? {
-                    ...state,
-                    cart: state.cart.map((product) =>
-                        product.id === newProduct.id
-                            ? { ...product, quantity: product.quantity + 1 }
-                            : product
-                    ),
-                }
-                : {
+            let newProduct = state.products.find((product) => product.id === action.payload.id);
+            let productInCart = state.cart.find((product) => product.id === action.payload.id);
+            console.log(newProduct,"nuevo");
+            console.log(productInCart,);
+            // return productInCart
+            //     ? {
+            //         ...state,
+            //         cart: state.cart.map((product) =>
+            //             product.id === newProduct.id
+            //                 ? { ...product, quantity: product.quantity + 1 }
+            //                 : product
+            //         ),
+            //     }
+                return{
                     ...state,
                     cart: [...state.cart, { ...newProduct, quantity: 1 }]
                 };

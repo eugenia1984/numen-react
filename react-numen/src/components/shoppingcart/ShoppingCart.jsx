@@ -41,6 +41,8 @@ const ShoppingCart = () => {
       );
   }, [])
 
+  console.log(cart);
+
   return (
     <div>
       <h3>Our Services</h3>
