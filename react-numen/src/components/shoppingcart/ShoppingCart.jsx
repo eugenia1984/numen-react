@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState, useEffect } from 'react';
+import axios from 'axios';
 import { shoppingInitialState, shoppingReducer } from '../../reducers/shoppingReducers';
 import { TYPES } from '../actions/ShoppingCartActions';
 import ItemCart from '../products/ItemCart';
@@ -17,13 +18,23 @@ const ShoppingCart = () => {
   };
 
   const deleteFromCart = (id) => {
-    dispatch({ type: TYPES.REMOVE_PRODUCT, payload: id })
+    dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id })
   };
 
-  const clearCart = () => { 
-    dispatch({type:TYPES.CLEAR_CART})
+  const clearCart = (id) => {
+    dispatch({ type: TYPES.CLEAR_CART, payload: id })
   };
 
+  const [tipo, settipo] = useState([]);
+
+  useEffect(() => {
+    axios("http://localhost:3001/cardsP")
+      .then(res => {
+        settipo(res.data)
+        dispatch({ type: TYPES.ADD_PRODUCTS, payload: res.data })
+      }
+      );
+  }, [])
 
   return (
     <div>

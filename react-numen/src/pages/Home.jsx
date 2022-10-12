@@ -15,7 +15,7 @@ return (
     <>
         <Banner />
         <ShoppingCart/>
-        <Productos />
+        {/* <Productos />  */}
         <Features id={1}/>
         <Partner />
         <Features id={2}/>

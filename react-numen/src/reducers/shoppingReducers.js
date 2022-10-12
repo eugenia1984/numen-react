@@ -15,26 +15,52 @@ export const shoppingReducer = (state, action) => {
     switch (action.type) {
         //dentro de state.product busca aquel producto igual al seleccionado, para despues retornar,agarra el estado actual de cart y agrega el nuevo item
         case TYPES.ADD_TO_CART: {
-            let newItem = state.products.find(product => product.id === action.payload);
+            let newProduct = state.products.find(product => product.id === action.payload);
+            let productInCart = state.products.find((product) => product.id === newProduct.id);
+            return productInCart
+                ? {
+                    ...state,
+                    cart: state.cart.map((product) =>
+                        product.id === newProduct.id
+                            ? { ...product, quantity: product.quantity + 1 }
+                            : product
+                    ),
+                }
+                : {
+                    ...state,
+                    cart: [...state.cart, { ...newProduct, quantity: 1 }]
+                };
+        }
+
+
+        case TYPES.REMOVE_ONE_PRODUCT: {
+
+        }
+
+        case TYPES.REMOVE_ALL_PRODUCTS: {
+            let pepe = state.cart.filter(product => product.id !== action.payload);
             return {
                 ...state,
-                cart:[...state.cart, newItem]
-            };
+                cart: pepe
+            }
+
+
+        
+
         }
+
         case TYPES.CLEAR_CART: {
-            return{
+            return {
                 ...state,
-                cart:[]
+                cart: []
             }
-         }
-        case TYPES.REMOVE_PRODUCT: { 
-            let pepe= state.cart.filter(product =>product.id !== action.payload);
-            return{
+        }
+        
+        case TYPES.ADD_PRODUCTS: {
+            return {
                 ...state,
-                cart:pepe
+                products: action.payload
             }
-
-
         }
         default:
             return state;

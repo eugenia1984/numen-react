@@ -40,8 +40,9 @@ body {
 }
 
 
-.product-img{
+.product-img img{
   height: 230px;
+  max-width: 100%;
   background-color: turquoise;
   background-repeat: no-repeat;
   background-position:  0 -75px;
