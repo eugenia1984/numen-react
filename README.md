@@ -105,3 +105,10 @@ Luego de bajarte el repositorio corre ```nmp install``` y luego ```npm start``` 
 - [Axios](https://axios-http.com/docs/intro) ```npm install axios```
 
 - [Material UI](https://mui.com/)  ```npm install @mui/material @emotion/react @emotion/styled  ```
+
+
+---
+
+Seguime en:  [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
+
+---
